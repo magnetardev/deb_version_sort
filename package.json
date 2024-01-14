@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "deb_version_sort",
+  "version": "1.0.0",
+  "type": "module",
+  "module": "./dist/index.mjs",
+  "types": "./index.d.ts",
+  "files": [
+    "index.d.ts",
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun build --minify lib/index.mjs --outdir dist",
+    "lint": "biome check lib",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.1",
+    "@types/bun": "latest"
+  }
+}
